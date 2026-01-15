@@ -4523,6 +4523,12 @@ PrefabInstance:
       addedObject: {fileID: 1613302040}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 354846871147500500, guid: 39593ba8dd943e64b8eca0062c3ff6d1, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1884722427044716666}
+    - targetCorrespondingSourceObject: {fileID: 354846871147500500, guid: 39593ba8dd943e64b8eca0062c3ff6d1, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 1884722427044716665}
+    - targetCorrespondingSourceObject: {fileID: 354846871147500500, guid: 39593ba8dd943e64b8eca0062c3ff6d1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1884722427044716664}
     - targetCorrespondingSourceObject: {fileID: 354846871147500500, guid: 39593ba8dd943e64b8eca0062c3ff6d1, type: 3}
@@ -4598,6 +4604,36 @@ CapsuleCollider2D:
   m_Offset: {x: 0.019011974, y: -0.20913053}
   m_Size: {x: 1.4326463, y: 1.8889313}
   m_Direction: 0
+--- !u!114 &1884722427044716665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443002691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279c05f76a855ec428e358cbf15b38c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  _jetpack: {fileID: 1884722427044716666}
+--- !u!114 &1884722427044716666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443002691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c41a016591a1e5408e28e2a084c1998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Jetpack
+  _maxEnergy: 100
+  _energyFlyingRatio: 1
+  _energyRegenerationRatio: 0.5
+  _horizontalForce: 100
+  _flyForce: 100
 --- !u!1001 &5144727243522076070
 PrefabInstance:
   m_ObjectHideFlags: 0

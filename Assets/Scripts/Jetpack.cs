@@ -11,6 +11,7 @@ public class Jetpack : MonoBehaviour
     }
     //Propiedades públicas
     public float Energy {get;set;}
+    public bool Flying{get;set;}
     //Fields
      private Rigidbody2D _target;
     [SerializeField]private float _maxEnergy;

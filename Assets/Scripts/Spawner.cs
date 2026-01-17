@@ -44,6 +44,12 @@ public class Spawner : MonoBehaviour
         //Add Rotation Force
         float torqueForce= Random.Range (-70f, 70f);
         newItem.GetComponent<Rigidbody2D>().AddTorque(torqueForce);    
+
+        //Cada vez que cae un item, el tiempo maximo se va reduciendo, hasta que solo sea un item por segundo
+        //Dificulty Progression
+        if (_maxSpawnTime>_minSpawnTime){
+        _maxSpawnTime -= 0.1f;
+        }
     }
 
 }
